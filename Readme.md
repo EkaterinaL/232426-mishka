@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Логвинова](https://up.htmlacademy.ru/adaptive/12/user/232426).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попов](https://up.htmlacademy.ru/adaptive/12/user/42761).
 
 ---
 
