@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
+  <title>Мишка</title>
 </head>
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин Мишка</h1>
-    <div class="page-header__logo">
-      <a href="index.html">
-        <img src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
       </a>
     </div>
     <nav class="main-nav main-nav--closed">
@@ -17,10 +17,10 @@
       <div class="main-nav__wrap">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-menu__catalog-link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-menu__order-link" href="order-form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
@@ -43,7 +43,7 @@
     <!-- PROMO -->
     <section class="page-promo">
       <div class="page-promo__wrap">
-        <h1 >Милые штуки ручной работы</h1>
+        <h1>Милые штуки ручной работы</h1>
         <ul class="page-promo__list menu-promo">
           <li class="menu-promo__item">
             <a class="menu-promo__link" href="#">
@@ -61,9 +61,9 @@
     <!-- GOODS OF THE WEEK -->
     <section class="goods-week">
       <div class="goods-week__wrap">
-        <h1 class="goods-week__title">Вязаные корзинки</h1>
-        <h2 class="goods-week__title-week">Товар недели</h2>
-        <p class="goods-week__description">Экологически чистая пряжка, ручная работа.Доступны в шести расцветках, и трех размерах.</p>
+        <h2 class="goods-week__title">Вязаные корзинки</h2>
+        <h3 class="goods-week__title-week">Товар недели</h3>
+        <p class="goods-week__description">Экологически чистая пряжка, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="goods__week table-goods">
           <tr>
             <td class="table-goods__field">Цвет</td>
@@ -86,7 +86,7 @@
     <!-- ABOUS US -->
     <section class="about-us">
       <div class="about-us__wrap">
-        <h1 class="about-us__title">Коротко о нас:</h1>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--flower-icon">
             Экологически чистые материалы
@@ -112,31 +112,30 @@
     <!-- REVIEWS -->
     <section class="reviews">
       <div class="reviews__wrap">
-        <h1 class="reviews__title">Отзывы</h1>
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews-list">
           <blockquote class="reviews__item">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
             </p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <cite class="reviews__author-username">
+            <cite class="reviews__author-name">Анастасия Красильникова
               <a class="reviews__author-link" href="#">@misssssiskras</a>
             </cite>
           </blockquote>
         </div>
         <div class="reviews__toggles slider__toggles-arrow">
-          <button class="slider__toggles-arrow slider__toggles-arrow--previous" type="button"></button>
-          <button class="slider__toggles-arrow slider__toggles-arrow--next" type="button"></button>
+          <button class="slider__toggles-arrow slider__toggles-arrow--previous" type="button">Назад</button>
+          <button class="slider__toggles-arrow slider__toggles-arrow--next" type="button">Вперёд</button>
         </div>
         <a href="#" class="reviews__write btn">Написать</a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts-wrap">
-        <h1 class="contacts__title">Контакты</h1>
-        <span class="contact__email">e-mail</span>
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contact__email">e-mail</p>
         <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <span class="contacts__address">Адрес</span>
+        <p class="contacts__address">Адрес</p>
         <p class="contacts__address-name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6510862139653!2d30.31928640295834!3d59.93793167875373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506788386980" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
