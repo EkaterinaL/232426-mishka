@@ -7,9 +7,9 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин Мишка</h1>
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="http://via.placeholder.com/87x38" width="87" height="38" alt="Мишка">
+      <div class="page-header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
         </a>
       </div>
       <nav class="main-nav main-nav--closed">
@@ -17,10 +17,10 @@
         <div class="main-nav__wrap">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-menu__catalog-link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-menu__order-link" href="order-form.html">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
@@ -50,71 +50,83 @@
                 Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
               </p>
               <div class="order-form__part">
-                <span class="order-form__name">Тип</span>
-                <label>
-                  <input type="radio" value="interior-accessories" name="type" checked>
-                  Аксессуары для интерьера
-                </label>
-                <label>
-                  <input type="radio" value="children-toy" name="type">
-                  Детская игрушка
-                </label>
+                <fieldset>
+                  <legend class="order-form__name">Тип</legend>
+                  <label>
+                    <input type="radio" value="interior-accessories" name="type" checked>
+                    Аксессуары для интерьера
+                  </label>
+                  <label>
+                    <input type="radio" value="children-toy" name="type">
+                    Детская игрушка
+                  </label>
+                </fieldset>
               </div>
               <div class="order-form__color">
-                <span class="order-form__name">Цвет</span>
-                <label>
-                  <input type="checkbox" value="white-color" name="white" checked>
-                  Белый
-                </label>
-                <label>
-                  <input type="checkbox" value="grey-color" name="grey" checked>
-                  Серый
-                </label>
-                <label>
-                  <input type="checkbox" value="tiffany-color" name="tiffany">
-                  Тиффани
-                </label>
-                <label>
-                  <input type="checkbox" value="black-color" name="black">
-                  Чёрный
-                </label>
-                <label>
-                  <input type="checkbox" value="pink-color" name="pink">
-                  Розовый
-                </label>
-                <label>
-                  <input type="checkbox" value="orange-color" name="orange">
-                  Оранжевый
-                </label>
+                <fieldset>
+                  <legend class="order-form__name">Цвет</legend>
+                  <label>
+                    <input type="checkbox" value="white-color" name="white" checked>
+                    Белый
+                  </label>
+                  <label>
+                    <input type="checkbox" value="grey-color" name="grey" checked>
+                    Серый
+                  </label>
+                  <label>
+                    <input type="checkbox" value="tiffany-color" name="tiffany">
+                    Тиффани
+                  </label>
+                  <label>
+                    <input type="checkbox" value="black-color" name="black">
+                    Чёрный
+                  </label>
+                  <label>
+                    <input type="checkbox" value="pink-color" name="pink">
+                    Розовый
+                  </label>
+                  <label>
+                    <input type="checkbox" value="orange-color" name="orange">
+                    Оранжевый
+                  </label>
+                </fieldset>
               </div>
-              <div class="order-form-customer-info">
-                <span class="order-form__name">ФИО</span>
-                <p>
-                  <label for="first-name">Имя</label>
-                  <input type="text" name="first-name" placeholder="Введите ваше имя*" value="" required>
-                </p>
-                <p>
-                  <label for="surname">Фамилия</label>
-                  <input type="text" name="surname" placeholder="Укажите фамилию*" value="" required>
-                </p>
-                <p>
-                  <label for="patronymic">Отчество</label>
-                  <input type="text" name="patronymic" placeholder="Отчество, если желаете" value="" required>
-                </p>
+              <div class="order-form__customer-info">
+                <fieldset>
+                  <legend class="order-form__name">ФИО</legend>
+                  <p>
+                    <label for="first-name">Имя</label>
+                    <input type="text" name="first-name" placeholder="Введите ваше имя*" value="" required>
+                  </p>
+                  <p>
+                    <label for="surname">Фамилия</label>
+                    <input type="text" name="surname" placeholder="Укажите фамилию*" value="" required>
+                  </p>
+                  <p>
+                    <label for="patronymic">Отчество</label>
+                    <input type="text" name="patronymic" placeholder="Отчество, если желаете" value="" required>
+                  </p>
+                </fieldset>
               </div>
               <div class="order-form__phone">
-                <span class="order-form__phone">Тел</span>
-                <input type="tel" name="tel" placeholder="+7 XXX XX XX*">
+                <fieldset>
+                  <legend class="order-form__phone">Тел</legend>
+                  <input type="tel" name="tel" placeholder="+7 XXX XX XX*">
+                </fieldset>
               </div>
               <div class="order-form__email">
-                <span class="order-form__email">E-mail</span>
-                <input type="email" name="email" placeholder="Ваш Email*" value="" required>
+                <fieldset>
+                  <legend class="order-form__email">E-mail</legend>
+                  <input type="email" name="email" placeholder="Ваш Email*" value="" required>
+                </fieldset>
               </div>
-              <div class="order-form--more">
-                <span class="order-form__more-info">Доп</span>
-                <textarea name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <div class="order-form__more">
+                <fieldset>
+                  <legend class="order-form__more-info">Доп</legend>
+                  <textarea name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </fieldset>
               </div>
-              <p class="order-form__text">*Поля обязательны к заполнению</p>
+              <p class="order-form__text"><sup>*</sup>Поля обязательны к заполнению</p>
               <button type="submit" class="order-form__submit btn">Отправить заказ</button>
             </form>
           </div>
