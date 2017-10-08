@@ -1,0 +1,30 @@
+.order-form__part {
+  margin: 20px 0;
+}
+
+.order-form {
+  width: $mobile-width;
+  border: solid 1px black;
+}
+
+.order-form__text {
+  font-size: 13px;
+  color: $text-color;
+  line-height: 24px;
+}
+
+.order-form__name {
+  text-transform: uppercase;
+  color: $light-green;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.order-form__submit {
+  padding-right: 40px;
+  padding-left: 40px;
+  line-height: 16px;
+  text-align: center;
+  background-color: $white;
+  font-weight: bold;
+}

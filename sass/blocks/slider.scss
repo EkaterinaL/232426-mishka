@@ -1,0 +1,22 @@
+.slider__toggles-arrow {
+  border: soolid 1 px #ececec;
+  background-color: $white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  overflow: hidden;
+
+
+
+
+  &--next {
+    color: transparent;
+    background-image: url(../../img/icon-right-arrow.svg);
+  }
+
+  &--previous {
+    color: transparent;
+    background-image: url(../../img/icon-left-arrow.svg);
+  }
+}
+

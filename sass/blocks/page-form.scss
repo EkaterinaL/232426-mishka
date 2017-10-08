@@ -1,0 +1,20 @@
+.page-form {
+  width: $mobile-width;
+  border: solid 1px black;
+  background-color: $grey;
+}
+
+.page-form__wrap {
+  width: $mobile-wrap;
+  border: solid 1px blue;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.page-form__title {
+  padding: 73px 10px;
+  font-size: $font-size-title;
+  line-height: 30px;
+  text-align: center;
+}

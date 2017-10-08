@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин Мишка</h1>
       <div class="page-header__logo logo">
-        <a class="logo__link" href="#">
-          <img class="logo__img" src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="img/logo-mobile.svg" width="87" height="38" alt="Лого Mishka">
         </a>
       </div>
       <nav class="main-nav main-nav--closed">
@@ -50,7 +51,7 @@
         <div class="goods__wrap">
           <article class="goods__goods-item goods-item">
             <a class="goods-item__link-photo" href="#">
-              <img class="goods-item__img" src="http://via.placeholder.com/260x197" width="260" height="197" alt="Зайчик-попрыгайчик">
+              <img class="goods-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="197" alt="Зайчик-попрыгайчик">
             </a>
             <h2 class="goods-item__name">Зайчик попрыгайчик</h2>
             <p class="goods-item__specific">Рост 30&nbsp;см, вес 200&nbsp;г</p>
@@ -59,16 +60,16 @@
           </article>
           <article class="goods__goods-item goods-item">
             <a class="goods-item__link-photo" href="#">
-              <img class="goods-item__img" src="http://via.placeholder.com/260x197" width="260" height="197" alt="Зайчик-попрыгайчик">
+              <img class="goods-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="197" alt="Зайчик-попрыгайчик">
             </a>
             <h2 class="goods-item__name">Корзина для белья</h2>
             <p class="goods-item__specific">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
             <p class="goods-item__price" >690&nbsp;руб.</p>
-            <a class="goods-item__bascket-link" href="#">Добавить в корзину</a>
+            <a class="goods-item__bascket-link visually-hidden" href="#">Добавить в корзину</a>
           </article>
           <article class="goods__goods-item goods-item">
             <a class="goods-item__link-photo" href="#">
-              <img class="goods-item__img" src="http://via.placeholder.com/260x197" width="260" height="197" alt="Зайчик-попрыгайчик">
+              <img class="goods-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="197" alt="Зайчик-попрыгайчик">
             </a>
             <h2 class="goods-item__name">Большая корзина для игрушек</h2>
             <p class="goods-item__specific">Диаметр 30&nbsp;см, высота 130&nbsp;см</p>
@@ -80,8 +81,8 @@
         <div class="goods__basket add-basket">
           <div class="add-basket__wrap">
             <form class="add-backet__popup" action="https://echo.htmlacademy.ru" method="post">
-              <h2 class="add-backet__title">Добавить в корзину</h2>
-              <p class="add-basket__size">Выберите размер</p>
+              <h2 class="add-backet__title">Добавить в&nbsp;корзину</h2>
+              <p class="add-basket__size">Выберите размер:</p>
               <label>
                 <input type="radio" value="S" name="size" checked>
                 S
@@ -94,7 +95,7 @@
                 <input type="radio" value="L" name="size">
                 L
               </label>
-              <button type="submit" class="oadd-basket__submit btn">Добавить</button>
+              <button type="submit" class="add-basket__submit">Добавить</button>
             </form>
           </div>
         </div>
@@ -104,8 +105,8 @@
         <div class="production__wrap">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video">
-            <video src="#" width="260" height="150" poster="http://via.placeholder.com/260x150"></video>
-            <button class="video__btn" type="button"></button>
+            <video src="#" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+            <button class="production__btn" type="button"></button>
           </div>
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production__order btn" href="#">Сделать заказ</a>
@@ -130,8 +131,8 @@
           <div class="page-footer__copyright copyright">
             <div class="copyright">
               <span class="copyright__text">Разработано:</span>
-              <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/12">
-                <img class="copyright__logo" src="http://via.placeholder.com/30x35" width="30" height="35" alt="Лого HTML academy">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="30" height="35" alt="Лого HTML academy">
               </a>
             </div>
           </div>

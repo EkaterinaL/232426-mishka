@@ -1,0 +1,45 @@
+.contacts {
+  width: $mobile-width;
+  border: solid 1px black;
+}
+
+.contacts__wrap {
+  margin: 0 auto;
+  width: $mobile-wrap;
+  border: solid 1px blue;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.contacts__title {
+  ont-size: $font-size-subtitle;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contact__email,
+.contacts__address,
+.contacts__address-name {
+  font-size: $font-size-text;
+  color: $text-color;
+  line-height: 30px;
+}
+
+.contact__email-link {
+  padding-bottom: 5px;
+  font-size: $font-size-text;
+  color: $text-color;
+  line-height: 30px;
+  border-bottom: 1px solid $light-green;
+}
+
+.contacts__map {
+  background-image: url("../../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contacts__write {
+  margin: 37px 30px;
+}

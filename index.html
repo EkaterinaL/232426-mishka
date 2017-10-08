@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин Мишка</h1>
     <div class="page-header__logo logo">
       <a class="logo__link" href="#">
-        <img class="logo__img" src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
+        <img class="logo__img" src="img/logo-mobile.svg" width="87" height="38" alt="Лого Mishka">
       </a>
     </div>
     <nav class="main-nav main-nav--closed">
@@ -43,20 +44,20 @@
     <!-- PROMO -->
     <section class="page-promo">
       <div class="page-promo__wrap">
-        <h1>Милые штуки ручной работы</h1>
-        <ul class="page-promo__list menu-promo">
-          <li class="menu-promo__item">
-            <a class="menu-promo__link" href="#">
-              Предметы интерьера
-            </a>
-          </li>
-          <li class="menu-promo__item">
-            <a class="menu-promo__link" href="#">
-              Детские игрушки
-            </a>
-          </li>
-        </ul>
+        <h1 class="page-promo__title">Милые штуки <span>ручной<span> работы для дома</h1>
       </div>
+          <ul class="page-promo__list menu-promo">
+            <li class="menu-promo__item">
+              <a class="menu-promo__link" href="#">
+                Предметы интерьера
+              </a>
+            </li>
+            <li class="menu-promo__item menu-promo__item--dark">
+              <a class="menu-promo__link" href="#">
+                Детские игрушки
+              </a>
+            </li>
+          </ul>
     </section>
     <!-- GOODS OF THE WEEK -->
     <section class="goods-week">
@@ -66,7 +67,7 @@
         <p class="goods-week__description">Экологически чистая пряжка, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="goods__week table-goods">
           <tr>
-            <td class="table-goods__field">Цвет</td>
+            <td class="table-goods__field">Цвет:</td>
             <td class="table-goods__value"> «Тиффани»/серый</td>
           </tr>
           <tr>
@@ -78,7 +79,7 @@
             <td class="table-goods__value">15&nbsp;см</td>
           </tr>
         </table>
-        <img class="goods-week__goods-photo" src="http://via.placeholder.com/260x315"  width="260" height="315" alt="фото товара">
+        <img class="goods-week__goods-photo" src="img/triple-set-mobile@1x.jpg"  width="260" height="315" alt="фото товара">
         <p class="goods-week__price">Цена: 990&nbsp;руб.</p>
         <a href="#" class="goods-week__order btn">Заказать</a>
       </div>
@@ -130,18 +131,21 @@
         <a href="#" class="reviews__write btn">Написать</a>
       </div>
     </section>
+    <!-- CONTACTS -->
     <section class="contacts">
-      <div class="contacts-wrap">
+      <div class="contacts__wrap">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contact__email">e-mail</p>
-        <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <p class="contacts__address">Адрес</p>
+        <p class="contact__email">e-mail:</p>
+        <a class="contact__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <p class="contacts__address">адрес:</p>
         <p class="contacts__address-name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6510862139653!2d30.31928640295834!3d59.93793167875373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506788386980" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+
         <a href="#" class="contacts__write btn">Напишите нам</a>
-      </div>
+
     </section>
   </main>
 
@@ -159,15 +163,15 @@
             <a class="social-networks__link social-networks__link--twitter" href="#">twitter</a>
           </li>
         </ul>
+      </div>
         <div class="page-footer__copyright copyright">
           <div class="copyright">
             <span class="copyright__text">Разработано:</span>
-            <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/12">
-              <img class="copyright__logo" src="http://via.placeholder.com/30x35" width="30" height="35" alt="Лого HTML academy">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="30" height="35" alt="Лого HTML academy">
             </a>
           </div>
         </div>
-      </div>
     </div>
   </footer>
 </body>
