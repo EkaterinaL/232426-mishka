@@ -1,9 +1,8 @@
 .social-networks__list {
-  padding:  30px 0;
+  padding: 30px 0;
   border-bottom: 1px solid #e5e5e5;
   text-align: center;
 }
-
 
 .social-networks__item {
   display: inline-block;
@@ -13,20 +12,18 @@
 .social-networks__link {
   color: transparent;
 
-
-
   &--instagram {
-    background-image: url(../../img/icon-insta.svg);
+    background-image: url("../../img/icon-insta.svg");
     background-repeat: no-repeat;
   }
 
   &--facebook {
-    background-image: url(../../img/icon-fb.svg);
+    background-image: url("../../img/icon-fb.svg");
     background-repeat: no-repeat;
   }
 
   &--twitter {
-    background-image: url(../../img/icon-twitter.svg);
+    background-image: url("../../img/icon-twitter.svg");
     background-repeat: no-repeat;
   }
 }
