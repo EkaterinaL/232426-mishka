@@ -1,0 +1,36 @@
+.main-nav {
+  width: $mobile-width;
+}
+
+.main-nav__wrapper {
+  width: $mobile-wrap;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  left: 280px;
+  color: transparent;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $white;
+  overflow: hidden;
+  border: none;
+}
+
+.main-nav__item {
+  padding: 28px 75px;
+}
+
+.main-nav__link,
+.user-list__search,
+.user-list__cart {
+  color: $black;
+  line-height: 24px;
+  font-size: $font-size-other;
+  font-weight: bold;
+}

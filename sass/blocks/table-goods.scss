@@ -1,0 +1,11 @@
+.table-goods {
+  width: $mobile-wrap;
+  margin-bottom: 27px;
+}
+
+.table-goods__field,
+.table-goods__value {
+  font-size: $font-size-text;
+  line-height: 20px;
+  color: $text-color;
+}

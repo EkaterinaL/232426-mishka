@@ -1,0 +1,46 @@
+.production {
+  width: $mobile-width;
+  border: solid 1px black;
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+.production__wrap {
+  width: $mobile-wrap;
+  border: solid 1px blue;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.production__title {
+  font-size: $font-size-other;
+  line-height: 24px;
+  font-weight: bold;
+  margin-left: 85px;
+}
+
+.production__video {
+  position: relative;
+}
+
+.production__btn {
+  position: absolute;
+  top: 36px;
+  right: 78px;
+  width: 97px;
+  height: 75px;
+  background-image: url("../../img/icon-play.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  overflow: hidden;
+  border: none;
+}
+
+.production__text {
+  font-size: 13px;
+  color: $text-color;
+  line-height: 24px;
+  padding-left: 5px;
+}

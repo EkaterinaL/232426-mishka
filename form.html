@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин Мишка</h1>
       <div class="page-header__logo logo">
-        <a class="logo__link" href="#">
-          <img class="logo__img" src="http://via.placeholder.com/87x38" width="87" height="38" alt="Лого Mishka">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="img/logo-mobile.svg" width="87" height="38" alt="Лого Mishka">
         </a>
       </div>
       <nav class="main-nav main-nav--closed">
@@ -40,29 +41,33 @@
     </header>
 
     <main class="page-main">
-      <!-- ORDER FORM -->
+
       <section class="page-form">
         <div class="page-form__wrap">
           <h1 class="page-form__title">Вязание на заказ</h1>
-          <div class="page-form__order-form order-form">
-            <form class="order-form__items" action="https://echo.htmlacademy.ru" method="post">
-              <p class="order-form__text">
+        </div>
+      </section>
+<!-- ORDER FORM -->
+      <section class="page-form__order-form order-form">
+        <div class="page-form__wrap">
+          <form class="order-form__items" action="https://echo.htmlacademy.ru" method="post">
+            <p class="order-form__text">
                 Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
-              </p>
-              <div class="order-form__part">
-                <fieldset>
-                  <legend class="order-form__name">Тип</legend>
-                  <label>
-                    <input type="radio" value="interior-accessories" name="type" checked>
+            </p>
+            <div class="order-form__part">
+              <fieldset>
+                <legend class="order-form__name">Тип</legend>
+                <label>
+                  <input type="radio" value="interior-accessories" name="type" checked>
                     Аксессуары для интерьера
-                  </label>
-                  <label>
+                </label>
+                <label>
                     <input type="radio" value="children-toy" name="type">
                     Детская игрушка
                   </label>
                 </fieldset>
               </div>
-              <div class="order-form__color">
+              <div class="order-form__part">
                 <fieldset>
                   <legend class="order-form__name">Цвет</legend>
                   <label>
@@ -91,7 +96,7 @@
                   </label>
                 </fieldset>
               </div>
-              <div class="order-form__customer-info">
+              <div class="order-form__part">
                 <fieldset>
                   <legend class="order-form__name">ФИО</legend>
                   <p>
@@ -108,56 +113,56 @@
                   </p>
                 </fieldset>
               </div>
-              <div class="order-form__phone">
+              <div class="order-form__part">
                 <fieldset>
-                  <legend class="order-form__phone">Тел</legend>
+                  <legend class="order-form__name">Тел</legend>
                   <input type="tel" name="tel" placeholder="+7 XXX XX XX*">
                 </fieldset>
               </div>
-              <div class="order-form__email">
+              <div class="order-form__part">
                 <fieldset>
-                  <legend class="order-form__email">E-mail</legend>
+                  <legend class="order-form__name">E-mail</legend>
                   <input type="email" name="email" placeholder="Ваш Email*" value="" required>
                 </fieldset>
               </div>
-              <div class="order-form__more">
+              <div class="order-form__part">
                 <fieldset>
-                  <legend class="order-form__more-info">Доп</legend>
+                  <legend class="order-form__name">Доп</legend>
                   <textarea name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </fieldset>
               </div>
               <p class="order-form__text"><sup>*</sup>Поля обязательны к заполнению</p>
               <button type="submit" class="order-form__submit btn">Отправить заказ</button>
             </form>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="page-footer">
-      <div class="page-footer-wrap">
-        <div class="page-footer__social social-networks">
-          <ul class="social-networks__list">
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--instagram" href="#">instagram</a>
-            </li>
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--facebook" href="#">facebook</a>
-            </li>
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--twitter" href="#">twitter</a>
-            </li>
-          </ul>
-          <div class="page-footer__copyright copyright">
-            <div class="copyright">
-              <span class="copyright__text">Разработано:</span>
-              <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/12">
-                <img class="copyright__logo" src="http://via.placeholder.com/30x35" width="30" height="35" alt="Лого HTML academy">
-              </a>
+          </div>
+        </section>
+        </main>
+
+        <footer class="page-footer">
+          <div class="page-footer-wrap">
+            <div class="page-footer__social social-networks">
+              <ul class="social-networks__list">
+                <li class="social-networks__item">
+                  <a class="social-networks__link social-networks__link--instagram" href="#">instagram</a>
+                </li>
+                <li class="social-networks__item">
+                  <a class="social-networks__link social-networks__link--facebook" href="#">facebook</a>
+                </li>
+                <li class="social-networks__item">
+                  <a class="social-networks__link social-networks__link--twitter" href="#">twitter</a>
+                </li>
+              </ul>
+              <div class="page-footer__copyright copyright">
+                <div class="copyright">
+                  <span class="copyright__text">Разработано:</span>
+                  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                    <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="30" height="35" alt="Лого HTML academy">
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-  </html>
+        </footer>
+      </body>
+      </html>

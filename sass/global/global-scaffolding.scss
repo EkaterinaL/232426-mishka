@@ -1,0 +1,37 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  overflow: hidden;
+  font-size: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: 17px;
+}
