@@ -1,16 +1,17 @@
 .main-nav {
-  width: $mobile-width;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.main-nav__wrapper {
-  width: $mobile-wrap;
-  margin: 0 auto;
+.main-nav__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 30px;
-  left: 280px;
+  left: 270px;
   color: transparent;
   width: 20px;
   height: 20px;
@@ -22,15 +23,102 @@
   border: none;
 }
 
-.main-nav__item {
-  padding: 28px 75px;
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-nav__link,
-.user-list__search,
-.user-list__cart {
+.main-nav__item {
+  min-width: 160px;
+  // position: relative;
+  // display: flex;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 45px;
+  padding: 18px 70px;
   color: $black;
   line-height: 24px;
   font-size: $font-size-other;
   font-weight: bold;
+}
+
+.main-nav__stock-list {
+  display: none;
+  font-size: $font-size-text;
+}
+
+.main-nav__link-delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .main-nav__wrap {
+    flex-direction: row;
+    // justify-content: space-between;
+    width: $tablet-wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+    position: absolute;
+    top: 111px;
+    left: 30px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__link-delivery {
+    display: flex;
+    color: $text-color;
+    font-size: $font-size-text;
+    line-height: 24px;
+  }
+
+  .main-nav__item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 130px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-wrap) {
+  .main-nav__list {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+    // width: $desktop-wrap;
+  }
+
+  .main-nav__item {
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    min-width: 180px;
+    padding: 0;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    color: $black;
+    line-height: 24px;
+    font-size: $font-size-other;
+    font-weight: bold;
+  }
 }

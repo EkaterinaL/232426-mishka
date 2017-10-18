@@ -4,9 +4,8 @@
   text-align: center;
 }
 
-.social-networks__item {
-  display: inline-block;
-  overflow: hidden;
+.social-networks__list {
+  display: flex;
 }
 
 .social-networks__link {
@@ -25,5 +24,26 @@
   &--twitter {
     background-image: url("../../img/icon-twitter.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .social-networks__list {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer-wrap {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid 1px green;
+    min-width: $desktop-wrap;
+    padding-top: 50px;
+    padding-bottom: 54px;
   }
 }

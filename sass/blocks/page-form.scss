@@ -1,12 +1,10 @@
 .page-form {
   width: $mobile-width;
-  border: solid 1px black;
   background-color: $grey;
 }
 
 .page-form__wrap {
   width: $mobile-wrap;
-  border: solid 1px blue;
   margin: 0 auto;
   margin-left: 30px;
   margin-right: 30px;
@@ -17,4 +15,44 @@
   font-size: $font-size-title;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    width: auto;
+}
+
+  .page-form__wrap {
+    min-width: $tablet-width;
+    border: solid 1px red;
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    // margin-top: -100px;
+  }
+
+  .page-form__title {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__wrap  {
+    margin-left: 100px;
+    margin-right: 100px;
+    // border: solid 1px green;
+    min-width: $desktop-wrap;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  .page-form__title  {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 97px;
+  }
 }

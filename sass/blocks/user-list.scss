@@ -1,3 +1,25 @@
 .user-list__item {
+  display: flex;
   padding: 28px 75px;
+  border-bottom: 1px solid #ececec;
+}
+
+.user-list__search {
+  color: $black;
+  line-height: 24px;
+  font-size: $font-size-other;
+  font-weight: bold;
+}
+
+.user-list__cart {
+  color: $black;
+  line-height: 24px;
+  font-size: $font-size-other;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    margin-top: -90px;
+  }
 }

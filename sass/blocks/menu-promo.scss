@@ -1,6 +1,7 @@
 .menu-promo__item {
   background-color: $light-green;
-  padding: 27px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   &--dark {
     background-color: $dark-green;
@@ -8,8 +9,26 @@
 }
 
 .menu-promo__link {
-  padding: 0 30px;
+  padding-left: 30px;
   color: $white;
   font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-promo__item {
+    width: 100%;
+  }
+
+  .menu-promo__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

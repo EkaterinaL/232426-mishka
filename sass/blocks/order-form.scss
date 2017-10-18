@@ -1,10 +1,11 @@
+
+
 .order-form__part {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .order-form {
-  width: $mobile-width;
-  border: solid 1px black;
+
 }
 
 .order-form__text {
@@ -18,6 +19,7 @@
   color: $light-green;
   line-height: 16px;
   font-weight: bold;
+  padding-bottom: 26px;
 }
 
 .order-form__submit {
@@ -28,3 +30,81 @@
   background-color: $white;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .order-form__items {
+    padding-top: 78px;
+  }
+
+  .order-form__name {
+    position: absolute;
+    top: 20;
+    left: 20;
+  }
+
+  .order-form__options {
+    padding-left: 130px;
+ }
+
+  .order-form__part--grey {
+    background-color: $grey;
+  }
+
+ .order-form__part-checkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+
+ .order-form__data {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .order-form__options--data{
+    padding-right: 40px;
+  }
+
+  .order-form__options--phone,
+  .order-form__options--mail {
+    background-color: transparent;
+    border: none;
+  }
+
+  .order-form__options--text {
+    width: 400px;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-right: 180px;
+    padding-bottom: 108px;
+    margin-left: 130px;
+    border: solid 2px $black;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .order-form__submit {
+    padding: 17px 30px;
+    width: 250px;
+  }
+
+  .order-form__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//  .order-form__part{
+//  }
+
+// }

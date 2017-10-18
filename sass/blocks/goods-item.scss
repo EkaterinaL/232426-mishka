@@ -1,6 +1,8 @@
 .goods-item {
   margin: 20px 0;
   border: solid 1px #ececec;
+  display: flex;
+  flex-direction: column;
 }
 
 .goods-item__name {
@@ -26,4 +28,35 @@
   font-weight: bold;
   color: $black;
   font-size: $font-size-text;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item {
+    margin-top: 0;
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 54px;
+  }
+
+  .goods-item__link-photo {
+    width: 334px;
+  }
+
+  .goods-item__img{
+    width: 334px;
+    height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item{
+    flex-direction: column;
+    width: 315px;
+    margin-right: 53px;
+  }
+
+  .goods-item__link-photo {
+    width: 315px;
+  }
+
 }
