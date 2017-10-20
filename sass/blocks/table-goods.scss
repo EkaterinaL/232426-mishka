@@ -1,11 +1,36 @@
 .table-goods {
-  width: $mobile-wrap;
+  width: 100%;
   margin-bottom: 27px;
-}
-
-.table-goods__field,
-.table-goods__value {
   font-size: $font-size-text;
   line-height: 20px;
   color: $text-color;
+}
+
+.table-goods__field {
+  padding-right: 13px;
+  border-bottom: 1px solid #ececec;
+}
+.table-goods__value {
+  padding-top: 14px;
+  border-bottom: 1px solid #ececec;
+  }
+
+@media (min-width: $tablet-width) {
+  .table-goods {
+    width: 292px;
+    margin-bottom: 0px;
+  }
+
+  .table-goods__field {
+    padding-right: 0px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ececec;
+  }
+
+.table-goods__value {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ececec;
+  }
 }

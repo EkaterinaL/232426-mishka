@@ -1,4 +1,19 @@
+
 .page-header {
-  width: $mobile-width;
-  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: $desktop-wrap;
+    margin: 0 auto;
+  }
 }

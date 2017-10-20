@@ -1,6 +1,5 @@
 .page-catalog {
   width: $mobile-width;
-  border: solid 1px black;
   background-color: $grey;
 }
 
@@ -17,4 +16,44 @@
   font-size: $font-size-title;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog {
+    width: auto;
+  }
+
+  .page-catalog__wrap {
+    min-width: $tablet-width;
+    border: solid 1px red;
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    // margin-top: -100px;
+  }
+
+  .page-catalog__title  {
+    margin: 0;
+    padding-bottom: 77px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__wrap  {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid 1px green;
+    min-width: $desktop-wrap;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  .page-catalog__title  {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 97px;
+  }
 }

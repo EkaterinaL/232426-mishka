@@ -1,8 +1,34 @@
 .logo {
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #ececec;
+  display: flex;
+
 }
 
 .logo__img {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    order: -1;
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+  }
+
+  .logo__img {
+    width: 112px;
+    height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    position: absolute;
+    left: 50%;
+  }
 }

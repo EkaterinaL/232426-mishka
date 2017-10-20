@@ -1,9 +1,14 @@
 .slider__toggles-arrow {
+  width: 167px;
+  display: flex;
+  justify-content: center;
   border: soolid 1 px #ececec;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;
-  overflow: hidden;
+  align-self: flex-start;
+  padding-bottom: 38px;
+
 
   &--next {
     color: transparent;
@@ -11,7 +16,16 @@
   }
 
   &--previous {
+    border: soolid 1 px #ececec;
     color: transparent;
     background-image: url("../../img/icon-left-arrow.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggles-arrow {
+    padding-top: 150px;
+    order: 4;
+    border: none;
   }
 }

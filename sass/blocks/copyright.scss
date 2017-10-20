@@ -1,6 +1,6 @@
 .copyright {
-  margin: 20px 0;
-  text-align: center;
+  display: flex;
+  padding-top: 22px;
 }
 
 .copyright__text {
@@ -8,4 +8,5 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  color: $black;
 }
