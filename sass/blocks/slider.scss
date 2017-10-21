@@ -24,8 +24,15 @@
 
 @media (min-width: $tablet-width) {
   .slider__toggles-arrow {
-    padding-top: 150px;
     order: 4;
     border: none;
+  }
+
+  .reviews__author-link {
+    display: block;
+  }
+
+  .contacts__write {
+    align-self: center;
   }
 }

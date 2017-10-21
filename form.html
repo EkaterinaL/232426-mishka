@@ -66,43 +66,47 @@
             <div class="order-form__part">
               <fieldset>
                 <legend class="order-form__name">Тип</legend>
-                <label class="order-form__options">
-                  <input type="radio" value="interior-accessories" name="type" checked>
+                <input class="radio-input" type="radio" value="interior-accessories" name="type" checked>
+                <label  class="order-form__options order-form__options--type">
                   Аксессуары для интерьера
+                  <span></span>
                 </label>
-                <label class="order-form__options">
-                  <input type="radio" value="children-toy" name="type">
+                <input class="radio-input" type="radio" value="children-toy" name="type">
+                <label class="order-form__options order-form__options--type">
                   Детская игрушка
+                  <span></span>
                 </label>
               </fieldset>
             </div>
             <div class="order-form__part order-form__part--grey">
-              <fieldset class="order-form__part-checkbox">
+              <fieldset class="order-form__part order-form__part--checkbox">
                 <legend class="order-form__name">Цвет</legend>
-                <label class="order-form__options">
-                  <input type="checkbox" value="white-color" name="white" checked>
-                  Белый
-                </label>
-                <label class="order-form__options">
-                  <input type="checkbox" value="grey-color" name="grey" checked>
-                  Серый
-                </label>
-                <label class="order-form__options">
-                  <input type="checkbox" value="tiffany-color" name="tiffany">
-                  Тиффани
-                </label>
-                <label class="order-form__options">
-                  <input type="checkbox" value="black-color" name="black">
-                  Чёрный
-                </label>
-                <label class="order-form__options">
-                  <input type="checkbox" value="pink-color" name="pink">
-                  Розовый
-                </label>
-                <label class="order-form__options">
-                  <input type="checkbox" value="orange-color" name="orange">
-                  Оранжевый
-                </label>
+                <div class="order-form__check-wrap">
+                  <input class="checkbox-input" type="checkbox" value="white-color" id="white" name="white" checked>
+                  <label for="white" class="order-form__options order-form__options--checkbox">
+                    Белый
+                  </label>
+                  <input class="checkbox-input" type="checkbox" value="grey-color" id="gray" name="grey" checked>
+                  <label for="gray" class="order-form__options order-form__options--checkbox">
+                    Серый
+                  </label>
+                  <input class="checkbox-input" type="checkbox" value="tiffany-color" id="tiffany" name="tiffany">
+                  <label for="tiffany" class="order-form__options order-form__options--checkbox">
+                    Тиффани
+                  </label>
+                  <input class="checkbox-input" type="checkbox" value="black-color" id="black" name="black">
+                  <label for="black" class="order-form__options order-form__options--checkbox">
+                    Чёрный
+                  </label>
+                  <input class="checkbox-input" type="checkbox" value="pink-color" name="pink" id="pink">
+                  <label  for="pink" class="order-form__options order-form__options--checkbox">
+                    Розовый
+                  </label>
+                  <input class="checkbox-input" type="checkbox" value="orange-color" id="orange" name="orange">
+                  <label for="orange" class="order-form__options order-form__options--checkbox">
+                    Оранжевый
+                  </label>
+                </div>
               </fieldset>
             </div>
             <div class="order-form__part">
@@ -110,15 +114,15 @@
                 <legend class="order-form__name">ФИО</legend>
                 <p class="order-form__data">
                   <label class="order-form__options order-form__options--data" for="first-name">Имя</label>
-                  <input  type="text" name="first-name" placeholder="Введите ваше имя*" value="" required>
+                  <input class="input-data" type="text" name="first-name" placeholder="Введите ваше имя*" value="" required>
                 </p>
                 <p class="order-form__data">
                   <label class="order-form__options order-form__options--data" for="surname">Фамилия</label>
-                  <input type="text" name="surname" placeholder="Укажите фамилию*" value="" required>
+                  <input class="input-data" type="text" name="surname" placeholder="Укажите фамилию*" value="" required>
                 </p>
                 <p class="order-form__data">
                   <label class="order-form__options order-form__options--data" for="patronymic">Отчество</label>
-                  <input type="text" name="patronymic" placeholder="Отчество, если желаете" value="" required>
+                  <input class="input-data" type="text" name="patronymic" placeholder="Отчество, если желаете" value="" required>
                 </p>
               </fieldset>
             </div>
@@ -169,14 +173,12 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <div class="copyright">
+<div class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано:</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="30" height="35" alt="Лого HTML academy">
-            </a>
+              </a>
           </div>
-        </div>
       </div>
     </footer>
   </body>

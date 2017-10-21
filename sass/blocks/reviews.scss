@@ -61,7 +61,7 @@
   }
 
   .reviews__wrap  {
-    width: $tablet-width;
+    width: $tablet-wrap;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -69,13 +69,12 @@
     margin-right: 50px;
     padding-top: 83px;
     padding-bottom: 116px;
-    // border: solid 1px red;
+    border: solid 1px red;
   }
 
   .reviews__title {
     order: 1;
     padding-bottom: 0;
-    width: 493px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -84,7 +83,7 @@
     order: 3;
   }
   .reviews__item {
-    width: 300px;
+    width: 645px;
     padding-top: 26px;
     padding-top: 26px;
     font-size: 16px;

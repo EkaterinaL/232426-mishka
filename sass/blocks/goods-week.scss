@@ -1,3 +1,8 @@
+.goods-week {
+  width: $mobile-width;
+}
+
+
 .goods-week__wrap {
   width: $mobile-wrap;
   // border: solid 1px blue;
@@ -47,10 +52,10 @@
 
 @media (min-width: $tablet-width) {
   .goods-week__wrap {
-    width: $tablet-width;
+    width: $tablet-wrap;
     margin-left: 50px;
     margin-right: 50px;
-    // border: solid 1px red;
+    border: solid 1px red;
     position: relative;
   }
 

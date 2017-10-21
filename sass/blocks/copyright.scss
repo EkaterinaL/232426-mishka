@@ -1,6 +1,8 @@
 .copyright {
   display: flex;
   padding-top: 22px;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .copyright__text {
@@ -9,4 +11,9 @@
   line-height: 18px;
   font-weight: bold;
   color: $black;
+}
+
+.copyright__link {
+  width: 32px;
+  height: 34px;
 }
