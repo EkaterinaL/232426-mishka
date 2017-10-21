@@ -2,8 +2,8 @@
 $white: #ffffff;  // фон хэдера и других блоков
 $light-green: #63d1bb; // фон блока promo, текст в форме, товар недели, иконки
 $dark-green: #56c3b2; // фон блока promo
-$grey-promo: #fbfbfb; // фон блока promo
-$grey: #f1f1f1; // фон футера, title каталога и формы
+$gray-promo: #fbfbfb; // фон блока promo
+$gray: #f1f1f1; // фон футера, title каталога и формы
 $black: #000000; // заголовки
 $text-color: #444444; // основной текст, кнопки
 
@@ -18,5 +18,8 @@ $mobile-width: 320px;
 $mobile-wrap: 260px;
 $tablet-width: 768px;
 $tablet-wrap: 668px;
-$desktop-width: 1250px;
-$desktop-wrap: 1150px;
+$desktop-width: 1150px;
+$desktop-wrap: 1050px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
