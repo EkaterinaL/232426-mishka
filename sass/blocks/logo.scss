@@ -1,9 +1,23 @@
 .logo {
-  display: flex;
-  justify-content: center;
+  min-width: 320px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid  #ececec;
   border-top: 1px solid #ececec;
+}
+
+.logo__link {
+  width: auto;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__img {
@@ -13,9 +27,17 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    order: -1;
+    order: -3;
+    padding-top: 23px;
+    padding-bottom: 13px;
+    padding-left: 6.3%;
+    border-top: none;
     border-bottom: 1px solid #ececec;
-    border-top: 1px solid #ececec;
+  }
+
+  .logo__link {
+    width: auto;
+    padding: 0;
   }
 
   .logo__img {
@@ -26,7 +48,16 @@
 
 @media (min-width: $desktop-width) {
   .logo {
-    position: absolute;
-    left: 50%;
+    align-self: flex-start;
+    order: -6;
+    width: 23.8%;
+    padding-top: 8.5px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+  }
+
+  .logo__img {
+    width: 148px;
+    height: 73px;
   }
 }
